@@ -1,5 +1,6 @@
+
 {
-  "name": "@magreti-ui/tokens",
+  "name": "@magreti-ui/react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,8 +15,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@magreti-ui/eslint-config": "*",
     "@magreti-ui/ts-config":"*",
+    "@magreti-ui/tokens": "*",
+    "@magreti-ui/eslint-config": "*",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4"
   }
