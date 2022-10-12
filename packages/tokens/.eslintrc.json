@@ -1,0 +1,3 @@
+{
+  "extends": "@magreti-ui/eslint-config"
+}
