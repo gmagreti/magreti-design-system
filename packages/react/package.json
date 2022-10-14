@@ -1,4 +1,3 @@
-
 {
   "name": "@magreti-ui/react",
   "version": "1.0.0",
@@ -7,18 +6,35 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "lint": "eslint src/**/*.ts* --fix"
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@magreti-ui/ts-config":"*",
-    "@magreti-ui/tokens": "*",
+    "@babel/core": "^7.19.3",
     "@magreti-ui/eslint-config": "*",
+    "@magreti-ui/tokens": "*",
+    "@magreti-ui/ts-config": "*",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "babel-loader": "^8.2.5",
+    "react": "^18.2.0",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }
